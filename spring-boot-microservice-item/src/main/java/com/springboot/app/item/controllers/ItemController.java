@@ -25,6 +25,7 @@ public class ItemController {
 	
 	@GetMapping("/ver/{id}/cantidad/{cantidad}")
 	public Item listar(@PathVariable Long id,@PathVariable Integer cantidad ){
+		System.out.println("Aqui se hace una nueva subida");
 		return itemService.findById(id,cantidad);
 	}
 }
